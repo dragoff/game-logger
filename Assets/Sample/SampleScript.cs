@@ -4,7 +4,7 @@ using GameLogger;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SampleScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -23,8 +23,17 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.LogError("Error");
         
         GDebug.Log("Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message ");
-        GDebug.LogWarning("Warning", ("Logger", Color.red));
+        
+        GDebug.ResetLogFile();
+        
+        GDebug.LogToFile("Message");
+        
+        GDebug.Log("Message");
+        GDebug.LogWarning("Warning");
         GDebug.LogError("Error"); 
+        
+        GDebug.Log("Message", ("GameLogger", Color.red));
+
     }
     // Update is called once per frame
     void Update()
