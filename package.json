@@ -1,0 +1,14 @@
+{
+  "name": "com.dragoff.gamelogger",
+  "version": "1.0.0",
+  "displayName": "Game logger",
+  "author": "@dragoff (Evgeniy A)",
+  "unity": "2021.2",
+  "description": "Simple logger with record to file",
+  "files": [	
+	"Scripts",
+	"Scripts.meta",
+	"package.json.meta"
+  ]
+}
+	
